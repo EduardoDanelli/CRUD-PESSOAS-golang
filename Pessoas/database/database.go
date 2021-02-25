@@ -10,7 +10,7 @@ import (
 // SetupDB é o método responsável por abrir a conexão com o banco de dados
 func SetupDB() *gorm.DB {
 	user := "postgres"
-	pass := "5628250"
+	pass := ""
 	dbname := "postgres"
 	host := "localhost"
 	logMode, _ := strconv.ParseBool("true")
@@ -32,4 +32,3 @@ func SetupDB() *gorm.DB {
 
 	return db
 }
-
